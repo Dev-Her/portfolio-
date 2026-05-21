@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+ 
+  /* Global */
+}
+:root {
+    --primary: #000000;
+    
+}
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.bold {
+  font-weight: 600;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 120px 0;
+}
+
+.row {
+  width: 100%;
+  height: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+
+
+/* Navbar */
+
+
+
+.nav {
+  position: fixed;
+  top: 16px;
+  height: 80px;
+  z-index: 10;
+  width: 100%;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  color: var(--primary);
+  padding: 0 20px;
+  background-color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.nav__logo{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.nav__links{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.nav__link {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+.nav__link__btn {
+    background-color: var(--primary);
+    color: white;
+    border-radius: 9999px;
+    padding: 8px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Home */
+
+
+
+
+#home {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.header__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--primary);
+}
+
+.header__span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.header__title {
+  font-size: 96px;
+  font-weight: 600;
+  line-height: 100px;
+  color: var(--primary);
+}
+
+.header__subtitle {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.header__links {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.header__scroll {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(50%);
+  animation: headerScrollAnimate 1000ms infinite alternate-reverse;
+}
+
+@keyframes headerScrollAnimate {
+  0% {
+    bottom: 32px;
+  }
+
+  100% {
+    bottom: 24px;
+  }
+}
+
+/* About */
+
+.about__row {
+  display: flex;
+
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about__text__title {
+  font-size: 24px;
+  text-transform: u;
+}
