@@ -161,7 +161,8 @@ button {
   transition: 300ms ease;
 }
 
-.menu__btn {
+.menu__btn,
+.close__btn {
   color: var(--primary);
 }
 
