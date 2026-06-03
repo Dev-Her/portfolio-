@@ -161,6 +161,10 @@ button {
   transition: 300ms ease;
 }
 
+.menu__btn {
+  color: var(--primary);
+}
+
 .open .menu {
   transform: translateX(0%);
   
