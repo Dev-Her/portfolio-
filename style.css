@@ -127,7 +127,7 @@ button {
 /* side bar menu */
 
 .nav__menu {
-  background-color: transparent;
+  background-color: white;
   border: none;
   font-size: 24px;
   display: none;
